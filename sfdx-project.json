@@ -1,0 +1,11 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        }
+    ],
+    "namespace": "",
+    "oauthLocalPort": 1717,
+    "sourceApiVersion": "55.0"
+}
