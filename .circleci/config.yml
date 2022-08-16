@@ -1,6 +1,6 @@
 version: 2.1
-  orbs: 
-    salesforce-apex: circleci/salesforce-apex@1.0.1
+  orbs:
+    apex: circleci/salesforce-apex@1.0.1
   jobs:
     install_authenticate:
       docker:
@@ -10,8 +10,8 @@ version: 2.1
         - apex/setup:
            defaultusername: shai.l@outlook.com
         - run:
-         name: Check Auth List
-         command: sfdx force:auth:list
+            name: Check Auth List
+            command: sfdx force:auth:list
   workflows:
     basic-test:
       jobs:
