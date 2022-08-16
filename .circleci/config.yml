@@ -1,6 +1,6 @@
 version: 2.1
   orbs: 
-  salesforce-apex: circleci/salesforce-apex@1.0.1
+    salesforce-apex: circleci/salesforce-apex@1.0.1
   jobs:
     install_authenticate:
       docker:
