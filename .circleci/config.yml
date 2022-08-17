@@ -6,7 +6,7 @@ jobs:
   install_authenticate:
   build_and_test:
     docker:
-      - image: cimg/node:14.5executor: node/default
+      - image: cimg/node:14.5
     steps:
       - checkout
       - apex/setup:
