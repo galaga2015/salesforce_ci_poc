@@ -1,21 +1,4 @@
 version: 2.1
 orbs:
   salesforce-apex: circleci/salesforce-apex@1.0.1
-  
-jobs:
-  install_authenticate:
-  build_and_test:
-    docker:
-      - image: cimg/node:14.5
-    steps:
-      - checkout
-      - apex/setup:
-           defaultusername: shai.l@outlook.com
-      - run:
-          name: Check Auth List
-          command: sfdx force:auth:list
-workflows:
-  basic-test:
-    jobs:
-      - build_and_test
-      - install_authenticate
+
