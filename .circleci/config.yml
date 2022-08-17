@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - apex/setup:
-          
+          defaultusername: shai.l@outlook.com
       - run:
           name: Check Auth List
           command: sfdx force:auth:list
