@@ -1,21 +1,7 @@
 version: 2.1
 orbs:
-  salesforce-apex: circleci/salesforce-apex@0.1.0
-  
-jobs:
-  install_authenticate:
-  build_and_test:
-    docker:
-      - image: cimg/node:14.5
-    steps:
-      - checkout
-      - apex/setup:
-           defaultusername: shai.l@outlook.com
-      - run:
-          name: Check Auth List
-          command: sfdx force:auth:list
+    hello: circleci/hello-build@0.0.5
 workflows:
-  basic-test:
-    jobs:
-      - build_and_test
-      - install_authenticate
+    "Hello Workflow":
+        jobs:
+          - hello/hello-build
